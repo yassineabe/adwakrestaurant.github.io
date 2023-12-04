@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title> Adwak Restaurant </title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="icon" href="images/logo.jpg" type="image/jpg" class="favicon">
+<link rel="shortcut icon" href="images/logo.jpg" type="image/jpg" class="favicon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+		/* Add these styles at the end of your existing styles */
+	
+		.fab-container {
+			z-index: 9000;
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			display: flex;
+			flex-direction: column-reverse;
+			align-items: flex-end;
+			gap: 10px;
+		}
+	
+		.fab-button {
+			background-color: #d0a772; /* WhatsApp Green */
+			color: #fff;
+			border: none;
+			border-radius: 50%;
+			width: 60px;
+			height: 60px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 24px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+		}
+	
+		.fab-button:hover {
+			background-color: #3d3429; /* Darker WhatsApp Green on hover */
+		}
+	
+		.fab-menu {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+	
+		.fab-menu-item {
+			transform: translateX(70px);
+			opacity: 0;
+			transition: transform 0.3s ease, opacity 0.3s ease;
+		}
+	
+		.fab-menu-item:nth-child(1) { transition-delay: 0.1s; }
+		.fab-menu-item:nth-child(2) { transition-delay: 0.2s; }
+		.fab-menu-item:nth-child(3) { transition-delay: 0.3s; }
+	
+		.fab-menu.show .fab-menu-item {
+			transform: translateX(0);
+			opacity: 1;
+		}
+	
+		.fab-menu-icon {
+			background-color: #cfa671;
+			border: none;
+			border-radius: 50%;
+			width: 40px;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 18px;
+			cursor: pointer;
+			color: #fff;
+			transition: background-color 0.3s ease;
+		}
+	
+		.fab-menu-icon:hover {
+			background-color: #cfa671;
+		}
+	
+		@media (max-width: 600px) {
+			.fab-container {
+				bottom: 10px;
+				right: 10px;
+			}
+	
+			.fab-button {
+				width: 50px;
+				height: 50px;
+				font-size: 20px;
+			}
+	
+			.fab-menu-item {
+				transform: translateX(50px);
+			}
+	
+			.fab-menu-icon {
+				width: 30px;
+				height: 30px;
+				font-size: 14px;
+			}
+		}
+	</style>
+	
+</head>
+
+<body>
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.jpg" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="index.html">Accueil</a></li>
+						<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+						<li class="nav-item "><a class="nav-link" href="a propos.html">À propos</a></li>
+						<li class="nav-item ">
+							
+							
+								<a class="nav-link" href="Partenaires.html">Partenaires</a>
+								
+							
+						</li>
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<!-- Start slides -->
+	<div id="slides" class="cover-slides">
+		<ul class="slides-container">
+			<li class="text-center">
+				<img src="picadwk/slider-01.jpg" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="m-b-20"><strong>Bienvenue à <br> Restaurant Adwak</strong></h1>
+							
+							
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="text-center">
+				<img src="picadwk/slider-03.jpg" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="m-b-20"><strong>Bienvenue à <br> Restaurant Adwak</strong></h1>
+							
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="text-center">
+				<img src="picadwk/slider-02.jpg" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="m-b-20"><strong>Bienvenue à <br> Restaurant Adwak</strong></h1>
+							
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="slides-navigation">
+			<a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			<a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+		</div>
+	</div>
+	<!-- End slides -->
+	
+	<!-- Start About -->
+	<div class="about-section-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<img src="picadwk/about-img.jpg" alt="" class="img-fluid">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 text-center">
+					<div class="inner-column">
+						<h1>Bienvenue à <span>Restaurant Adwak</span></h1>
+						<p>Bienvenue à Adwak, un havre culinaire niché au cœur d'Ain Sebaa, au Maroc. À Adwak, nous vous invitons à un voyage gastronomique qui marie les saveurs riches de la cuisine marocaine avec une touche de modernité. Nos chefs confectionnent méticuleusement chaque plat en utilisant des ingrédients frais, locaux, pour vous offrir une expérience culinaire authentique et inoubliable. Plongez-vous dans l'ambiance chaleureuse et accueillante d'Adwak, où l'hospitalité marocaine traditionnelle rencontre l'élégance moderne. De délicieux tajines à la couscous aromatique, notre menu reflète la diversité et la vivacité de la tradition culinaire marocaine. Que vous recherchiez un dîner romantique ou une réunion animée avec des amis et de la famille, Adwak est le cadre parfait. À Adwak, nous sommes fiers de vous offrir non seulement un repas, mais un moment mémorable. Rejoignez-nous et régalez-vous des saveurs du Maroc, où chaque bouchée raconte une histoire de tradition, de passion et d'excellence. Découvrez la véritable essence de la cuisine marocaine à Adwak à Ain Sebaa. </p>
+					
+							<a class="btn btn-lg btn-circle btn-outline-new-white" href="avis.html">Avis</a>						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End About -->
+	
+	<!-- Start QT -->
+	<div class="qt-box qt-background">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 ml-auto mr-auto text-left">
+					<p class="lead ">
+						"Plongez dans la symphonie de saveurs qui dansent sur votre assiette, où chaque plat raconte une histoire, et chaque bouchée est un chapitre d'une aventure culinaire."					</p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End QT -->
+	
+	<
+	<!-- End Menu -->
+	
+	<!-- Start Gallery -->
+	<div class="gallery-box">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading-title text-center">
+						<h2>Galerie</h2>
+					</div>
+				</div>
+			</div>
+			<div class="tz-gallery">
+				<div class="row">
+					<div class="col-sm-12 col-md-4 col-lg-4">
+						<a class="lightbox" href="picadwk/Plan de travail 1.jpg">
+							<img class="img-fluid" src="picadwk/Plan de travail 1.jpg" alt="Gallery Images">
+						</a>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-4">
+						<a class="lightbox" href="picadwk/Plan de travail 2.jpg">
+							<img class="img-fluid" src="picadwk/Plan de travail 2.jpg" alt="Gallery Images">
+						</a>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-4">
+						<a class="lightbox" href="picadwk/Plan de travail 3.jpg">
+							<img class="img-fluid" src="picadwk/Plan de travail 3.jpg" alt="Gallery Images">
+						</a>
+					</div>
+					<div class="col-sm-12 col-md-4 col-lg-4">
+						<a class="lightbox" href="picadwk/Plan de travail4.jpg">
+							<img class="img-fluid" src="picadwk/Plan de travail 4.jpg" alt="Gallery Images">
+						</a>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-4">
+						<a class="lightbox" href="picadwk/Plan de travail 5.jpg">
+							<img class="img-fluid" src="picadwk/Plan de travail 5.jpg" alt="Gallery Images">
+						</a>
+					</div> 
+					<div class="col-sm-6 col-md-4 col-lg-4">
+						<a class="lightbox" href="picadwk/Plan de travail 6.jpg">
+							<img class="img-fluid" src="picadwk/Plan de travail 6.jpg" alt="Gallery Images">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Gallery -->
+	
+	<!-- Start Customer Reviews -->
+	<div class="customer-reviews-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading-title text-center">
+						<h2>Commentaires clients</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 mr-auto ml-auto text-center">
+					<div id="reviews" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner mt-4">
+							<div class="carousel-item text-center active">
+								
+								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Youssef El Khattabi</strong></h5>
+								<h6 class="text-dark m-0">client</h6>
+								<p class="m-0 pt-3">J'ai passé une expérience exceptionnelle dans ce restaurant. Le service était impeccable, le personnel était sympathique et la nourriture était délicieuse. Je recommande vivement cet endroit à tous ceux qui recherchent une cuisine de qualité dans une atmosphère agréable.
+								</p>
+							</div>
+							<div class="carousel-item text-center">
+								
+								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Ahmed Benjelloun</strong></h5>
+								<h6 class="text-dark m-0">client</h6>
+								<p class="m-0 pt-3">Un vrai régal pour les papilles ! La variété des plats, la fraîcheur des ingrédients et la présentation soignée font de ce restaurant une destination culinaire incontournable. Le personnel attentionné ajoute une touche chaleureuse à l'expérience. À recommander sans hésitation !</p>
+							</div>
+							<div class="carousel-item text-center">
+								
+								<h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Amina El Khattabi</strong></h5>
+								<h6 class="text-dark m-0">client</h6>
+								<p class="m-0 pt-3">Une soirée mémorable dans ce restaurant ! La carte propose une sélection alléchante, et chaque plat est une explosion de saveurs. Le service est attentif sans être intrusif, créant une atmosphère agréable. Un lieu idéal pour les amateurs de bonne cuisine et d'ambiance conviviale.</p>
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#reviews" role="button" data-slide="prev">
+							<i class="fa fa-angle-left" aria-hidden="true"></i>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#reviews" role="button" data-slide="next">
+							<i class="fa fa-angle-right" aria-hidden="true"></i>
+							<span class="sr-only">Suivante</span>
+						</a>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Customer Reviews -->
+	
+	<!-- Start Contact info -->
+	<div class="contact-imfo-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<i class="fa fa-volume-control-phone"></i>
+					<div class="overflow-hidden">
+						<h4>Téléphone</h4>
+						<p class="lead">
+							+212 5 22 66 67 25
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-envelope"></i>
+					<div class="overflow-hidden">
+						<h4>Email</h4>
+						<p class="lead">
+							adwakrest@gmail.com
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<i class="fas fa-map-marked-alt"></i>
+					<div class="overflow-hidden">
+						<h4>Emplacement</h4>
+						<p class="lead">
+							Restaurant Adouak اذواق, JF55+V5G, Casablanca 20250
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Contact info -->
+	
+	<!-- Start Footer -->
+	<footer class="footer-area bg-f">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<h3>À propos de nous</h3>
+					<p>Chez Adwak, nous sommes fiers de vous offrir non seulement un repas, mais un moment mémorable. Rejoignez-nous et régalez-vous des saveurs du Maroc, où chaque bouchée raconte une histoire de tradition, de passion et d'excellence. Découvrez la véritable essence de la cuisine marocaine à Adwak à Ain Sebaa.</p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Heures d'ouverture</h3>
+					<p><span class="text-color">Dimanche :</span> Fermé</p>
+					<p><span class="text-color">Lundi :</span> 11 h 00 – 22 h 30</p>
+					<p><span class="text-color">Mardi :</span> 11 h 00 – 22 h 30</p>
+					<p><span class="text-color">Mercredi :</span> 11 h 00 – 22 h 30</p>
+					<p><span class="text-color">Jeudi :</span> 11 h 00 – 22 h 30</p>
+					<p><span class="text-color">Vendredi :</span> 11 h 00 – 22 h 30</p>
+					<p><span class="text-color">Samedi :</span> 11 h 00 – 22 h 30</p>
+					
+
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>RÉSEAUX SOCIAUX</h3>
+					
+				
+					<ul class="list-inline f-social">
+						<li class="list-inline-item"><a href="https://web.facebook.com/profile.php?id=100063246069606"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="https://wa.me/+212706090838"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.instagram.com/adwak.rest/?hl=fr"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+
+						<li class="list-inline-item"><a href="mailto:adwakrest@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+
+						<li class="list-inline-item"><a href="https://www.tiktok.com/https://www.tiktok.com/@adwak.rest" target="_blank"><i class="fab fa-tiktok" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	
+		
+	</footer>
+	<!-- End Footer -->
+	
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+	<!-- Floating Action Button -->
+
+<!-- Floating Action Button Script -->
+<div class="fab-container">
+    <button class="fab-button" onclick="toggleMenu()">
+        <i class="fas fa-plus"></i>
+    </button>
+    <ul class="fab-menu">
+        <li class="fab-menu-item">
+            <button class="fab-menu-icon" onclick="openWhatsApp()">
+                <i class="fab fa-whatsapp"></i>
+            </button>
+        </li>
+        <li class="fab-menu-item">
+            <button class="fab-menu-icon" onclick="callPhoneNumber()">
+                <i class="fas fa-phone"></i>
+            </button>
+        </li>
+        <li class="fab-menu-item">
+            <button class="fab-menu-icon" onclick="sendEmail()">
+                <i class="far fa-envelope"></i>
+            </button>
+        </li>
+    </ul>
+</div>
+<script>
+    function toggleMenu() {
+        document.querySelector('.fab-menu').classList.toggle('show');
+    }
+
+    function openWhatsApp() {
+        window.location.href = "https://wa.me/+212706090838";
+    }
+
+    function callPhoneNumber() {
+        window.location.href = 'tel:05 22 66 67 25';
+    }
+
+    function sendEmail() {
+        window.location.href = 'mailto:adwakrest@gmail.com';
+    }
+</script>
+
+</body>
+</html>

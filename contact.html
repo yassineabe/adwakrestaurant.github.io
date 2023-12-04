@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Adwak Restaurant</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+	<link rel="icon" href="images/logo.jpg" type="image/jpg" class="favicon">
+<link rel="shortcut icon" href="images/logo.jpg" type="image/jpg" class="favicon">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+		/* Add these styles at the end of your existing styles */
+	
+		.fab-container {
+			z-index: 9000;
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			display: flex;
+			flex-direction: column-reverse;
+			align-items: flex-end;
+			gap: 10px; /* Ensure the FAB is above other elements */
+		}
+	
+		.fab-button {
+			background-color: #d0a772; /* WhatsApp Green */
+			color: #fff;
+			border: none;
+			border-radius: 50%;
+			width: 60px;
+			height: 60px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 24px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+		}
+	
+		.fab-button:hover {
+			background-color: #3d3429; /* Darker WhatsApp Green on hover */
+		}
+	
+		.fab-menu {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+	
+		.fab-menu-item {
+			transform: translateX(70px);
+			opacity: 0;
+			transition: transform 0.3s ease, opacity 0.3s ease;
+		}
+	
+		.fab-menu-item:nth-child(1) { transition-delay: 0.1s; }
+		.fab-menu-item:nth-child(2) { transition-delay: 0.2s; }
+		.fab-menu-item:nth-child(3) { transition-delay: 0.3s; }
+	
+		.fab-menu.show .fab-menu-item {
+			transform: translateX(0);
+			opacity: 1;
+		}
+	
+		.fab-menu-icon {
+			background-color: #d0a772;
+			border: none;
+			border-radius: 50%;
+			width: 40px;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 18px;
+			cursor: pointer;
+			color: #fff;
+			transition: background-color 0.3s ease;
+		}
+	
+		.fab-menu-icon:hover {
+			background-color: #d0a772;
+		}
+	
+		@media (max-width: 600px) {
+			.fab-container {
+				bottom: 10px;
+				right: 10px;
+			}
+	
+			.fab-button {
+				width: 50px;
+				height: 50px;
+				font-size: 20px;
+			}
+	
+			.fab-menu-item {
+				transform: translateX(50px);
+			}
+	
+			.fab-menu-icon {
+				width: 30px;
+				height: 30px;
+				font-size: 14px;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.jpg" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+						<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+						<li class="nav-item "><a class="nav-link" href="a propos.html">À propos</a></li>
+						<li class="nav-item ">
+							
+							
+							<a class="nav-link" href="Partenaires.html">Partenaires</a>
+							
+						
+					</li>
+						<li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+	<!-- End header -->
+	
+	<!-- Start All Pages -->
+	<div class="all-page-title page-breadcrumb">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Contact</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<!-- End All Pages -->
+	
+	<iframe class="map-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1529.460943429885!2d-7.541663072187605!3d33.60930414265647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cc8a3e623109%3A0xc093075aea73189c!2zUmVzdGF1cmFudCBBZG91YWsg2KfYsNmI2KfZgg!5e1!3m2!1sfr!2sma!4v1699728479388!5m2!1sfr!2sma" width="1519.2" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<br>
+	
+	<!-- Start Contact -->
+	<!-- End Contact -->
+	
+	<!-- Start Contact info -->
+	<div class="contact-imfo-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<i class="fa fa-volume-control-phone"></i>
+					<div class="overflow-hidden">
+						<h4>Téléphone</h4>
+						<p class="lead">
+							+212 5 22 66 67 25
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-envelope"></i>
+					<div class="overflow-hidden">
+						<h4>Email</h4>
+						<p class="lead">
+							adwakrest@gmail.com
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<i class="fas fa-map-marked-alt"></i>
+					<div class="overflow-hidden">
+						<h4>Emplacement</h4>
+						<p class="lead">
+							Restaurant Adouak اذواق, JF55+V5G, Casablanca 20250
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Contact info -->
+	
+	<!-- Start Footer -->
+	<footer class="footer-area bg-f">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<h3>À propos de nous</h3>
+					<p>Chez Adwak, nous sommes fiers de vous offrir non seulement un repas mais aussi un moment mémorable. Rejoignez-nous et régalez-vous des saveurs du Maroc, où chaque bouchée raconte une histoire de tradition, de passion, et d'excellence. Découvrez la véritable essence de la cuisine marocaine chez Adwak à Ain Sebaa.</p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Heures d'ouverture</h3>
+					<p><span class="text-color">Dimanche :</span> Fermé</p>
+					<p><span class="text-color">Lundi :</span> 11h00 - 22h30</p>
+					<p><span class="text-color">Mardi :</span> 11h00 - 22h30</p>
+					<p><span class="text-color">Mercredi :</span> 11h00 - 22h30</p>
+					<p><span class="text-color">Jeudi :</span> 11h00 - 22h30</p>
+					<p><span class="text-color">Vendredi :</span> 11h00 - 22h30</p>
+					<p><span class="text-color">Samedi :</span> 11h00 - 22h30</p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Réseaux sociaux</h3>
+					<ul class="list-inline f-social">
+						<li class="list-inline-item"><a href="https://web.facebook.com/profile.php?id=100063246069606"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="https://wa.me/+212706090838"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.instagram.com/adwak.rest/?hl=fr"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="mailto:adwakrest@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.tiktok.com/https://www.tiktok.com/@adwak.rest" target="_blank"><i class="fab fa-tiktok" aria-hidden="true"></i></a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+		
+	</footer>
+	<!-- End Footer -->
+	
+	<!-- End Footer -->
+	
+	
+<div class="fab-container">
+    <button class="fab-button" onclick="toggleMenu()">
+        <i class="fas fa-plus"></i>
+    </button>
+    <ul class="fab-menu">
+        <li class="fab-menu-item">
+            <button class="fab-menu-icon" onclick="openWhatsApp()">
+                <i class="fab fa-whatsapp"></i>
+            </button>
+        </li>
+        <li class="fab-menu-item">
+            <button class="fab-menu-icon" onclick="callPhoneNumber()">
+                <i class="fas fa-phone"></i>
+            </button>
+        </li>
+        <li class="fab-menu-item">
+            <button class="fab-menu-icon" onclick="sendEmail()">
+                <i class="far fa-envelope"></i>
+            </button>
+        </li>
+    </ul>
+</div>
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/jquery.mapify.js"></script>
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+	<script>
+		function toggleMenu() {
+			document.querySelector('.fab-menu').classList.toggle('show');
+		}
+	
+		function openWhatsApp() {
+			window.location.href = "https://wa.me/+212706090838";
+		}
+	
+		function callPhoneNumber() {
+			window.location.href = 'tel:05 22 66 67 25';
+		}
+	
+		function sendEmail() {
+			window.location.href = 'mailto:adwakrest@gmail.com';
+		}
+	</script>
+	
+</body>
+</html>
